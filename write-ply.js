@@ -258,8 +258,6 @@ function PLYReadStream(header, vertex, emitVertex, vertexCount, face, emitFace, 
   this._emitFace = emitFace
   this._faceCount = faceCount
   this._currentFace = 0
-  
-  this._bops = bops
 }
 
 util.inherits(PLYReadStream, Readable)
