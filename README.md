@@ -19,6 +19,7 @@ Writes a JSON representation of a PLY file to disk.
 * `data` is a JSON encoded PLY file.  It must have two fields:
     + `vertex` an object containing the properties of the vertices
     + `face` an object containing the properties of the faces
+    + `comments` an optional array of comments to add to the header
 * `options` is an optional object containg separate flags.  In addition to the usual options you can set on a Readable stream, you can also set the flag `binary` which tells whether to use a binary format or ascii.
 
 **Returns** A readable stream that you can pipe to wherever you want encoding the contents of the PLY file
