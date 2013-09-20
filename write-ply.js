@@ -63,7 +63,7 @@ function createPropertyHeader(object, name, props, count, types) {
   var result = []
   result.push([ "element ", name, " ", count ].join(""))
   for(var i=0; i<props.length; ++i) {
-    result.push(["property ", props[i], " ", types[i]].join(""))
+    result.push(["property ", types[i], " ", props[i]].join(""))
   }
   return result.join("\n")
 }
@@ -121,6 +121,14 @@ function compileEmitFunctionAscii(types) {
   return new Function("data", "i", code.join("\n"))
 }
 
+function compileEmitFunctionBinary(types) {
+
+  //Two cases: static vs variable sized
+  
+  throw new Error("Unsupported")
+
+}
+
 var CACHED = {}
 
 function getEmit(binary, types) {
@@ -130,7 +138,7 @@ function getEmit(binary, types) {
   } else {
     var emit
     if(binary) {
-      throw new Error("Binary PLY not supported")
+      emit = compileEmitFunctionBinary(types)
     } else {
       emit = compileEmitFunctionAscii(types)
     }
