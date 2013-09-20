@@ -1,0 +1,35 @@
+{
+  "name": "write-ply",
+  "version": "0.0.0",
+  "description": "Serializes a PLY file to a stream",
+  "main": "write-ply.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "is-little-endian": "~0.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "tap test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mikolalysenko/write-ply.git"
+  },
+  "keywords": [
+    "ply",
+    "stanford",
+    "polygon",
+    "mesh",
+    "graphics",
+    "stream",
+    "write",
+    "serialize"
+  ],
+  "author": "Mikola Lysenko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mikolalysenko/write-ply/issues"
+  }
+}
