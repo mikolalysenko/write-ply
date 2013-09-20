@@ -3,7 +3,6 @@
 var Readable = require("stream").Readable
 var util = require("util")
 var littleEndian = require("is-little-endian")
-var bops = require("bops")
 
 module.exports = writePLY
 
